@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VidyaSetu – Gramin Chhatra Sahayata</title>
+<meta name="description" content="Free notes, mentors, scholarships and sports pathways for rural students.">
+<script src="https://cdn.tailwindcss.com/3.4.17" onerror="var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4';document.head.appendChild(s)"></script>
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:5rem;background:#fffbf5}
+body{background:#fffbf5;color:#1f2937;font-family:system-ui,"Noto Sans Devanagari","Segoe UI",sans-serif}
+dialog{border:0;border-radius:1rem;padding:0;max-width:24rem;width:92%}
+dialog::backdrop{background:rgba(17,24,39,.6)}
+
+/* ===== Apple-style theme ===== */
+:root{--ink:#1d1d1f;--mute:#6e6e73;--bg:#f5f5f7}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI","Noto Sans Devanagari",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+header.sticky{background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
+.hero{position:relative;overflow:hidden;color:var(--ink)!important;padding:5rem 1rem 4rem!important;background:radial-gradient(900px 420px at 50% -10%,#ccfbf1,transparent 62%),radial-gradient(700px 360px at 92% 25%,#ffedd5,transparent 58%),var(--bg)!important}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem)!important;font-weight:700!important;letter-spacing:-.035em;line-height:1.05!important;background:linear-gradient(90deg,#0f766e,#f97316);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mute)!important;font-size:1.2rem;line-height:1.5}
+.hero a{border-radius:999px!important;padding:.85rem 1.7rem!important;font-weight:600!important;color:#fff!important;background:#0f766e!important;transition:transform .2s,filter .2s}
+.hero a:nth-child(2){background:#fff!important;color:var(--ink)!important;box-shadow:inset 0 0 0 1px #d2d2d7}
+.hero a:nth-child(3){background:#f97316!important}
+.hero a:hover{transform:scale(1.04);filter:brightness(.96)}
+.pill{background:rgba(255,255,255,.8);border:1px solid rgba(0,0,0,.08);border-radius:999px;padding:.35rem .9rem;color:var(--mute);font-weight:500}
+main section h2{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:700;letter-spacing:-.025em}
+main section h2+p{color:var(--mute)}
+.bg-white.border,.bg-gray-50.border{background:#fff!important;border:0!important;border-radius:22px!important;box-shadow:0 2px 14px rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease}
+.bg-white.border:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.10)}
+#shareForm{background:#fff!important;border:0!important;border-radius:22px!important;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+#mentors{background:#fff!important;border:0!important}
+#sports{background:var(--bg)!important;border:0!important}
+.bg-teal-800.rounded-2xl{background:linear-gradient(135deg,#0f766e,#134e4a)!important;border-radius:22px!important}
+input,select,textarea{border-radius:12px!important;border:1px solid #d2d2d7!important}
+input:focus,select:focus,textarea:focus{outline:3px solid rgba(15,118,110,.25);outline-offset:1px}
+button.bg-teal-700,button.bg-green-600,#mk{border-radius:999px!important}
+footer{background:#1d1d1f!important}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3Cdefs%3E%3ClinearGradient id=%22bg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%2314b8a6%22/%3E%3Cstop offset=%221%22 stop-color=%22%23115e59%22/%3E%3C/linearGradient%3E%3ClinearGradient id=%22sun%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23fbbf24%22/%3E%3Cstop offset=%221%22 stop-color=%22%23f97316%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22512%22 height=%22512%22 fill=%22url(%23bg)%22/%3E%3Ccircle cx=%22256%22 cy=%22230%22 r=%22120%22 fill=%22url(%23sun)%22/%3E%3Cpath d=%22M256 396C220 364 150 356 100 370V236C150 222 220 230 256 262Z%22 fill=%22%23fff%22/%3E%3Cpath d=%22M256 396C292 364 362 356 412 370V236C362 222 292 230 256 262Z%22 fill=%22%23f0fdfa%22/%3E%3Cpath d=%22M256 262V396%22 stroke=%22%230f766e%22 stroke-width=%226%22/%3E%3Cg stroke=%22%2399f6e4%22 stroke-width=%226%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M132 270c34-6 84-2 104 22%22/%3E%3Cpath d=%22M132 300c34-6 84-2 104 22%22/%3E%3Cpath d=%22M380 270c-34-6-84-2-104 22%22/%3E%3Cpath d=%22M380 300c-34-6-84-2-104 22%22/%3E%3C/g%3E%3Cpath d=%22M200 186v34c0 22 112 22 112 0v-34L256 208z%22 fill=%22%230f766e%22/%3E%3Cpath d=%22M256 124L352 166 256 208 160 166z%22 fill=%22%23134e4a%22/%3E%3Cpath d=%22M346 170v46%22 stroke=%22%23fde68a%22 stroke-width=%226%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%22346%22 cy=%22220%22 r=%228%22 fill=%22%23fde68a%22/%3E%3Ccircle cx=%22372%22 cy=%22146%22 r=%2226%22 fill=%22%23fff%22 stroke=%22%23134e4a%22 stroke-width=%224%22/%3E%3Cpath d=%22M372 135l10 8-4 12h-12l-4-12z%22 fill=%22%23134e4a%22/%3E%3C/svg%3E">
+<meta property="og:title" content="VidyaSetu – Learn together, play together">
+<meta property="og:description" content="Free notes, mentors, scholarship links and sports pathways for rural students, in 7 languages.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#115e59">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="bg-white border-b sticky z-40" style="top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="#top" class="text-xl font-extrabold text-teal-800">Vidya<span class="text-orange-600">Setu</span></a>
+    <nav class="hidden md:flex gap-5 text-sm font-medium text-gray-600">
+      <a href="#library" data-i="nav1" class="hover:text-teal-800">Library</a>
+      <a href="#mentors" data-i="nav2" class="hover:text-teal-800">Mentors</a>
+      <a href="#opps" data-i="nav3" class="hover:text-teal-800">Opportunities</a>
+      <a href="#sports" data-i="nav4" class="hover:text-teal-800">Sports</a>
+    </nav>
+    <select id="lang" class="border rounded-full px-2 py-1 text-xs font-bold text-teal-800 bg-white" aria-label="Language"><option value="en">English</option><option value="hi">हिंदी</option><option value="pa">ਪੰਜਾਬੀ</option><option value="mr">मराठी</option><option value="bn">বাংলা</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option></select>
+  </div>
+  <nav class="md:hidden flex overflow-x-auto gap-4 px-4 pb-2 text-sm font-medium text-gray-600">
+    <a href="#library" data-i="nav1">Library</a><a href="#mentors" data-i="nav2">Mentors</a><a href="#opps" data-i="nav3">Opportunities</a><a href="#sports" data-i="nav4">Sports</a>
+  </nav>
+</header>
+
+<div class="bg-amber-100 text-amber-900 text-sm text-center px-4 py-2">🚧 Prototype for feedback: sample content only. Try search, ★ save, languages and the sports checklist, then <a href="#feedback" class="underline font-semibold">tell us what you think</a>.</div>
+
+<main id="top" class="flex-grow">
+  <section class="hero text-center">
+    <h1 class="text-3xl md:text-5xl font-extrabold max-w-3xl mx-auto leading-tight" data-i="h1">Let's learn together, play together.</h1>
+    <p class="mt-4 text-teal-100 max-w-2xl mx-auto" data-i="sub">Free study material, guidance from seniors, scholarship links and sports pathways, all in one place.</p>
+    <div class="mt-6 flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center">
+      <a href="#library" class="px-6 py-3 bg-orange-500 hover:bg-orange-600 rounded-lg font-bold" data-i="cta1">Open Library</a>
+      <a href="#opps" class="px-6 py-3 bg-white text-teal-900 rounded-lg font-bold" data-i="cta2">Find Scholarships</a>
+      <a href="#sports" class="px-6 py-3 bg-green-500 hover:bg-green-600 rounded-lg font-bold" data-i="cta3">Sports Opportunities</a>
+    </div>
+    <div class="mt-8 flex flex-wrap gap-2 justify-center text-sm"><span class="pill">🌐 7 languages</span><span class="pill">📴 Offline-ready</span><span class="pill">🆓 Free for students</span></div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dash" class="max-w-6xl mx-auto px-4 pt-10">
+    <h2 class="text-xl font-bold" data-i="dashT">My Dashboard</h2>
+    <div class="grid sm:grid-cols-3 gap-4 mt-4">
+      <a href="#library" class="bg-white border rounded-xl p-4 block hover:shadow"><div class="text-2xl">📚</div><div class="font-bold mt-1">Open Library</div><p class="text-sm text-gray-600"><b id="dLib">0</b> materials · <b id="dSaved">0</b> saved · <b id="dMine">0</b> yours</p></a>
+      <a href="#opps" class="bg-white border rounded-xl p-4 block hover:shadow"><div class="text-2xl">🎓</div><div class="font-bold mt-1">Find Scholarships</div><p class="text-sm text-gray-600"><b id="dOpp">0</b> official portals · <b id="dReq">0</b> mentor requests</p></a>
+      <a href="#sports" class="bg-white border rounded-xl p-4 block hover:shadow"><div class="text-2xl">🏅</div><div class="font-bold mt-1">Sports</div><p class="text-sm text-gray-600" id="dSp">No checklist yet</p></a>
+    </div>
+  </section>
+
+  <!-- LIBRARY -->
+  <section id="library" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold" data-i="libT">📚 E-Pustak Daan: Digital Library</h2>
+    <p class="text-gray-600 mt-1" data-i="libD">Search notes and PDFs shared by seniors. Save the ones you need on this device.</p>
+    <div class="mt-5 flex flex-col sm:flex-row gap-3">
+      <div class="flex-1 flex gap-2"><input id="q" type="search" placeholder="Search notes, exams, subjects…" class="flex-1 border rounded-lg px-3 py-2 bg-white" aria-label="Search"><button id="mic" type="button" class="px-3 border rounded-lg bg-white" aria-label="Voice search">🎤</button></div>
+      <select id="lvl" class="border rounded-lg px-3 py-2 bg-white" aria-label="Level">
+        <option value="">All levels</option><option>School</option><option>College</option><option>Competitive</option>
+      </select>
+      <label class="flex items-center gap-2 text-sm"><input id="onlySaved" type="checkbox"> Saved only</label>
+    </div>
+    <div id="res" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5"></div>
+    <p id="resEmpty" class="hidden text-gray-500 text-center py-8">No materials match. Try another search.</p>
+
+    <form id="shareForm" class="mt-10 bg-amber-50 border border-amber-200 rounded-2xl p-5 grid sm:grid-cols-2 gap-3">
+      <h3 class="sm:col-span-2 text-lg font-bold" data-i="shareT">Share a resource</h3>
+      <input id="rt" required maxlength="100" placeholder="Material name *" class="border rounded-lg px-3 py-2 bg-white">
+      <input id="rl" required type="url" placeholder="https:// link (Drive / PDF) *" class="border rounded-lg px-3 py-2 bg-white">
+      <select id="rv" class="border rounded-lg px-3 py-2 bg-white"><option>School</option><option>College</option><option>Competitive</option></select>
+      <select id="rg" class="border rounded-lg px-3 py-2 bg-white"><option>Hindi</option><option>English</option><option>Hindi + English</option></select>
+      <p class="sm:col-span-2 text-xs text-gray-600">Share only material you made or that is free to share. Do not upload copyrighted books. Prototype: listings stay on your device only.</p>
+      <button class="sm:col-span-2 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-lg py-2.5" data-i="shareB">Add to library</button>
+    </form>
+  </section>
+
+  <!-- MENTORS -->
+  <section id="mentors" class="bg-teal-50 border-y border-teal-100 px-4 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-teal-900" data-i="menT">🧭 Margdarshan: Mentors</h2>
+      <p class="text-teal-800 mt-1" data-i="menD">Sample mentor profiles. Real mentors will be verified before going live.</p>
+      <div id="mentorGrid" class="grid md:grid-cols-3 gap-4 mt-6"></div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITIES -->
+  <section id="opps" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold" data-i="oppT">🎯 Opportunity Finder</h2>
+    <p class="text-gray-600 mt-1" data-i="oppD">Official portals only. Always confirm dates and eligibility on the official site.</p>
+    <div id="chips" class="flex gap-2 overflow-x-auto mt-4 pb-1"></div>
+    <div id="oppList" class="space-y-3 mt-4"></div>
+  </section>
+
+  <!-- SPORTS -->
+  <section id="sports" class="bg-white border-t px-4 py-12">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-6">
+      <div class="lg:col-span-2 bg-teal-800 text-white rounded-2xl p-6">
+        <h2 class="text-xl font-bold" data-i="spT">🏅 Sports Hub</h2>
+        <p class="text-sm text-teal-100 mt-1 mb-4">Pick a sport and stage for a starter checklist. Nothing is sent to any agency.</p>
+        <select id="sp" class="w-full rounded-lg px-3 py-2 text-gray-900 mb-3"><option>Athletics</option><option>Kabaddi</option><option>Wrestling</option><option>Boxing</option><option>Hockey</option><option>Football</option><option>Volleyball</option><option>Badminton</option><option>Para-sports</option></select>
+        <select id="st" class="w-full rounded-lg px-3 py-2 text-gray-900 mb-3"><option>Just starting</option><option>School team</option><option>College team</option><option>District / state level</option></select>
+        <button id="mk" class="w-full bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold rounded-lg py-2.5">Create checklist</button>
+      </div>
+      <div class="lg:col-span-3 border rounded-2xl p-6 bg-gray-50">
+        <div id="chk" class="text-sm text-gray-600">Your checklist will appear here.</div>
+        <div class="mt-5 pt-4 border-t flex flex-wrap gap-3 text-sm text-teal-800 underline">
+          <a href="https://www.kheloindia.gov.in/" target="_blank" rel="noopener noreferrer">Khelo India ↗</a>
+          <a href="https://www.sportsauthorityofindia.gov.in/" target="_blank" rel="noopener noreferrer">Sports Authority of India ↗</a>
+          <a href="https://fitindia.gov.in/" target="_blank" rel="noopener noreferrer">Fit India ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="feedback" class="max-w-3xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold">💬 Tell us what you think</h2>
+    <p class="text-gray-600 mt-1">Takes one minute. You send it yourself on WhatsApp; nothing is stored on a server.</p>
+    <form id="fbForm" class="mt-4 space-y-3 bg-white border rounded-2xl p-5">
+      <label class="block text-sm font-semibold">Who are you?<select id="fbWho" class="mt-1 w-full border rounded-lg px-3 py-2 font-normal"><option>School student</option><option>College student</option><option>Parent</option><option>Teacher / mentor</option></select></label>
+      <label class="block text-sm font-semibold">Which part is most useful?<select id="fbPart" class="mt-1 w-full border rounded-lg px-3 py-2 font-normal"><option>Library</option><option>Mentors</option><option>Scholarships</option><option>Sports</option></select></label>
+      <label class="block text-sm font-semibold">What is confusing or missing?<textarea id="fbText" required maxlength="400" rows="3" class="mt-1 w-full border rounded-lg px-3 py-2 font-normal"></textarea></label>
+      <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg py-2.5">Send feedback on WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-gray-900 text-gray-400 text-sm text-center py-6 px-4">
+  <p><span class="text-white font-bold">VidyaSetu</span> · Built for Gramin Bharat · Prototype, not affiliated with any government body.</p>
+  <p class="mt-2"><a id="waSite" class="underline text-green-400" target="_blank" rel="noopener noreferrer">Share VidyaSetu on WhatsApp</a></p>
+</footer>
+
+<dialog id="dlg">
+  <form method="dialog" id="mentorForm" class="p-6 space-y-3">
+    <h3 id="dT" class="text-lg font-bold"></h3>
+    <input id="mn" required maxlength="60" placeholder="Your first name" class="w-full border rounded-lg px-3 py-2">
+    <textarea id="mq" required maxlength="300" rows="3" placeholder="What do you need help with?" class="w-full border rounded-lg px-3 py-2"></textarea>
+    <p class="text-xs text-gray-500">Do not share phone numbers, address or documents here.</p>
+    <div class="flex gap-2 justify-end"><button type="button" id="dc" class="px-4 py-2 bg-gray-100 rounded-lg text-sm">Cancel</button><button class="px-4 py-2 bg-teal-700 text-white rounded-lg text-sm">Send request</button></div>
+  </form>
+</dialog>
+<div id="toast" class="fixed left-1/2 -translate-x-1/2 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg hidden z-50" style="bottom:calc(1rem + env(safe-area-inset-bottom,0px))"></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e};
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.remove('hidden');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.add('hidden'),2500)}
+
+// ---- storage (safe) ----
+let S={saved:[],mine:[],reqs:[],lang:'en'};
+try{const r=localStorage.getItem('vs1');if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
+const save=()=>{try{localStorage.setItem('vs1',JSON.stringify(S))}catch(e){}if(typeof updateDash==='function')updateDash()};
+
+// ---- language ----
+const T={en:{nav1:'Library',nav2:'Mentors',nav3:'Opportunities',nav4:'Sports',h1:"Let's learn together, play together.",sub:'Free study material, guidance from seniors, scholarship links and sports pathways, all in one place.',cta1:'Open Library',cta2:'Find Scholarships',libT:'📚 E-Pustak Daan: Digital Library',libD:'Search notes and PDFs shared by seniors. Save the ones you need on this device.',shareT:'Share a resource',shareB:'Add to library',menT:'🧭 Margdarshan: Mentors',menD:'Sample mentor profiles. Real mentors will be verified before going live.',oppT:'🎯 Opportunity Finder',oppD:'Official portals only. Always confirm dates and eligibility on the official site.',spT:'🏅 Sports Hub',cta3:"Sports Opportunities",dashT:"My Dashboard"},
+hi:{nav1:'पुस्तकालय',nav2:'मार्गदर्शन',nav3:'अवसर',nav4:'खेल',h1:"आइए साथ मिलकर सीखें, साथ मिलकर खेलें।",sub:'मुफ़्त पढ़ाई की सामग्री, सीनियर्स से मार्गदर्शन, छात्रवृत्ति के लिंक और खेल के रास्ते, सब एक जगह।',cta1:'पुस्तकालय खोलें',cta2:'छात्रवृत्ति खोजें',libT:'📚 ई-पुस्तक दान: डिजिटल पुस्तकालय',libD:'सीनियर्स के नोट्स और PDF खोजें। ज़रूरी सामग्री इस डिवाइस पर सेव करें।',shareT:'सामग्री साझा करें',shareB:'पुस्तकालय में जोड़ें',menT:'🧭 मार्गदर्शन: मेंटर',menD:'नमूना मेंटर प्रोफ़ाइल। असली मेंटर जाँच के बाद ही जोड़े जाएँगे।',oppT:'🎯 अवसर खोजें',oppD:'केवल आधिकारिक पोर्टल। तारीख़ और पात्रता हमेशा आधिकारिक साइट पर जाँचें।',spT:'🏅 खेल केंद्र',cta3:"खेल अवसर",dashT:"मेरा डैशबोर्ड"},
+pa:{nav1:"ਲਾਇਬ੍ਰੇਰੀ",nav2:"ਮਾਰਗਦਰਸ਼ਨ",nav3:"ਮੌਕੇ",nav4:"ਖੇਡਾਂ",h1:"ਆਓ ਮਿਲ ਕੇ ਸਿੱਖੀਏ, ਮਿਲ ਕੇ ਖੇਡੀਏ।",cta1:"ਲਾਇਬ੍ਰੇਰੀ ਖੋਲ੍ਹੋ",cta2:"ਵਜ਼ੀਫ਼ੇ ਲੱਭੋ",cta3:"ਖੇਡ ਮੌਕੇ",libT:"📚 ਡਿਜੀਟਲ ਲਾਇਬ੍ਰੇਰੀ",menT:"🧭 ਮਾਰਗਦਰਸ਼ਨ",oppT:"🎯 ਮੌਕੇ ਲੱਭੋ",spT:"🏅 ਖੇਡ ਕੇਂਦਰ",dashT:"ਮੇਰਾ ਡੈਸ਼ਬੋਰਡ"},
+mr:{nav1:"ग्रंथालय",nav2:"मार्गदर्शन",nav3:"संधी",nav4:"क्रीडा",h1:"चला, एकत्र शिकूया, एकत्र खेळूया.",cta1:"ग्रंथालय उघडा",cta2:"शिष्यवृत्ती शोधा",cta3:"क्रीडा संधी",libT:"📚 डिजिटल ग्रंथालय",menT:"🧭 मार्गदर्शन",oppT:"🎯 संधी शोधा",spT:"🏅 क्रीडा केंद्र",dashT:"माझा डॅशबोर्ड"},
+bn:{nav1:"লাইব্রেরি",nav2:"পথনির্দেশ",nav3:"সুযোগ",nav4:"খেলাধুলা",h1:"চলো একসাথে শিখি, একসাথে খেলি।",cta1:"লাইব্রেরি খুলুন",cta2:"বৃত্তি খুঁজুন",cta3:"খেলার সুযোগ",libT:"📚 ডিজিটাল লাইব্রেরি",menT:"🧭 পথনির্দেশ",oppT:"🎯 সুযোগ খুঁজুন",spT:"🏅 খেলাধুলা কেন্দ্র",dashT:"আমার ড্যাশবোর্ড"},
+ta:{nav1:"நூலகம்",nav2:"வழிகாட்டல்",nav3:"வாய்ப்புகள்",nav4:"விளையாட்டு",h1:"வாருங்கள் சேர்ந்து கற்போம், சேர்ந்து விளையாடுவோம்.",cta1:"நூலகத்தைத் திறக்கவும்",cta2:"உதவித்தொகை தேடு",cta3:"விளையாட்டு வாய்ப்புகள்",libT:"📚 டிஜிட்டல் நூலகம்",menT:"🧭 வழிகாட்டல்",oppT:"🎯 வாய்ப்புகளைத் தேடு",spT:"🏅 விளையாட்டு மையம்",dashT:"என் டாஷ்போர்டு"},
+te:{nav1:"గ్రంథాలయం",nav2:"మార్గదర్శనం",nav3:"అవకాశాలు",nav4:"క్రీడలు",h1:"రండి కలిసి నేర్చుకుందాం, కలిసి ఆడుకుందాం.",cta1:"గ్రంథాలయం తెరవండి",cta2:"స్కాలర్‌షిప్‌లు కనుగొనండి",cta3:"క్రీడా అవకాశాలు",libT:"📚 డిజిటల్ గ్రంథాలయం",menT:"🧭 మార్గదర్శనం",oppT:"🎯 అవకాశాలు వెతకండి",spT:"🏅 క్రీడా కేంద్రం",dashT:"నా డ్యాష్‌బోర్డ్"}};
+const VL={en:'en-IN',hi:'hi-IN',pa:'pa-IN',mr:'mr-IN',bn:'bn-IN',ta:'ta-IN',te:'te-IN'};
+function applyLang(){document.documentElement.lang=S.lang;document.querySelectorAll('[data-i]').forEach(n=>{const v=(T[S.lang]||{})[n.dataset.i]||T.en[n.dataset.i];if(v)n.textContent=v});$('#lang').value=S.lang}
+$('#lang').onchange=e=>{S.lang=e.target.value;save();applyLang()};
+
+// ---- library ----
+const SEED=[
+ {id:'s1',t:'Class 11–12 Maths notes',v:'School',g:'Hindi + English',d:'Sample listing',l:''},
+ {id:'s2',t:'General Studies previous-year papers',v:'Competitive',g:'Hindi + English',d:'Sample listing',l:''},
+ {id:'s3',t:'College Chemistry syllabus breakdown',v:'College',g:'English',d:'Sample listing',l:''},
+ {id:'s4',t:'Class 10 Science quick revision',v:'School',g:'Hindi',d:'Sample listing',l:''}];
+function renderRes(){
+  const q=$('#q').value.toLowerCase(),v=$('#lvl').value,so=$('#onlySaved').checked,box=$('#res');box.replaceChildren();
+  const all=[...S.mine,...SEED].filter(r=>(!v||r.v===v)&&(!so||S.saved.includes(r.id))&&(r.t+r.v+r.g).toLowerCase().includes(q));
+  $('#resEmpty').classList.toggle('hidden',all.length>0);
+  all.forEach(r=>{
+    const c=el('article','bg-white border rounded-xl p-4 flex flex-col');
+    c.append(el('span','text-xs font-bold uppercase '+(r.l?'text-teal-700':'text-gray-400'),r.l?'Shared by you':r.d),el('h3','font-bold mt-1',r.t),el('p','text-sm text-gray-600 mt-1',r.v+' · '+r.g));
+    const row=el('div','mt-4 flex gap-2');
+    const o=el('button','flex-1 py-2 text-sm font-semibold rounded border border-orange-200 bg-orange-50 text-orange-700','Open');
+    o.onclick=()=>r.l?window.open(r.l,'_blank','noopener,noreferrer'):toast('Sample listing: no file attached yet');
+    const b=el('button','px-3 py-2 text-sm rounded border',S.saved.includes(r.id)?'★ Saved':'☆ Save');
+    b.onclick=()=>{S.saved=S.saved.includes(r.id)?S.saved.filter(x=>x!==r.id):[...S.saved,r.id];save();renderRes()};
+    const w=el('button','px-3 py-2 text-sm rounded border text-green-700','WhatsApp');w.onclick=()=>window.open('https://wa.me/?text='+encodeURIComponent(r.t+(r.l?' '+r.l:'')+' (shared via VidyaSetu)'),'_blank','noopener,noreferrer');row.append(o,b,w);c.append(row);box.append(c)});
+}
+['#q','#lvl','#onlySaved'].forEach(s=>$(s).addEventListener('input',renderRes));
+$('#shareForm').onsubmit=e=>{e.preventDefault();const l=$('#rl').value.trim();
+  if(!/^https?:\/\//i.test(l))return toast('Link must start with https://');
+  S.mine.unshift({id:'u'+Date.now(),t:$('#rt').value.trim(),v:$('#rv').value,g:$('#rg').value,l});save();e.target.reset();renderRes();toast('Added to your library');$('#library').scrollIntoView()};
+
+// ---- mentors ----
+const M=[['KV','Karan Verma','After-12th guidance','Choosing entrance exams and planning preparation from a small town.'],['NS','Neha Sharma','College admissions','University entrance exams, degree choices and documents.'],['RV','Rahul Verma','Competitive exams','Self-study plans for state exams without costly coaching.']];
+let who='';
+M.forEach(m=>{const c=el('div','bg-white rounded-2xl border border-teal-100 p-5 text-center');
+  c.append(el('div','w-16 h-16 mx-auto rounded-full bg-orange-100 text-orange-600 font-bold text-xl flex items-center justify-center',m[0]),el('h3','font-bold mt-3',m[1]),el('p','text-sm font-semibold text-teal-700',m[2]),el('p','text-sm text-gray-600 mt-2 mb-4',m[3]));
+  const b=el('button','w-full py-2 text-sm font-medium rounded border border-teal-200 bg-teal-50 text-teal-800','Request guidance');
+  b.onclick=()=>{who=m[1];$('#dT').textContent='Ask '+m[1];$('#dlg').showModal()};c.append(b);$('#mentorGrid').append(c)});
+$('#dc').onclick=()=>$('#dlg').close();
+$('#mentorForm').onsubmit=()=>{S.reqs.push({to:who,n:$('#mn').value,q:$('#mq').value,at:Date.now()});save();$('#mentorForm').reset();toast('Request saved (demo: not sent to anyone yet)')};
+
+// ---- opportunities ----
+const O=[
+ ['college','Scholarship','National Scholarship Portal','Central and state scholarships for school and college students.','https://scholarships.gov.in/'],
+ ['after12','Entrance exams','NTA exam notices','Official notices for national entrance tests after 12th.','https://nta.ac.in/'],
+ ['competitive','Free coaching','State free-coaching schemes','Many states run free coaching for state exams. Search your state portal via India.gov.in.','https://www.india.gov.in/'],
+ ['competitive','Public jobs','Union Public Service Commission','Official UPSC notices and exam calendar.','https://upsc.gov.in/']];
+const F=[['all','All'],['after12','After 12th'],['competitive','Competitive'],['college','College / Scholarships']];let cur='all';
+function renderOpps(){const ch=$('#chips');ch.replaceChildren();
+  F.forEach(f=>{const b=el('button','px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap '+(cur===f[0]?'bg-teal-700 text-white':'bg-gray-100 text-gray-600'),f[1]);b.onclick=()=>{cur=f[0];renderOpps()};ch.append(b)});
+  const l=$('#oppList');l.replaceChildren();
+  O.filter(o=>cur==='all'||o[0]===cur).forEach(o=>{const c=el('div','bg-white border rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-3');
+    const d=el('div');d.append(el('span','text-xs font-bold text-orange-600 uppercase',o[1]),el('h3','font-bold',o[2]),el('p','text-sm text-gray-600',o[3]));
+    const a=el('a','px-4 py-2 bg-gray-900 text-white rounded-lg text-sm text-center whitespace-nowrap','Visit official site ↗');a.href=o[4];a.target='_blank';a.rel='noopener noreferrer';c.append(d,a);l.append(c)})}
+
+// ---- sports ----
+$('#mk').onclick=()=>{const sp=$('#sp').value,st=$('#st').value,b=$('#chk');S.sport=sp+' · '+st;save();b.replaceChildren(el('p','font-semibold text-gray-900',sp+' · '+st));
+  const u=el('ul','list-disc pl-5 mt-3 space-y-2');
+  [`Note your ${sp} experience, matches and certificates.`,'Ask your PE teacher or a recognised local coach for safe, supervised training.','Check official Khelo India pages for current programmes.','Confirm dates, eligibility and documents on the official notice.','Share personal documents only through official channels.'].forEach(t=>u.append(el('li','',t)));b.append(u)};
+
+function updateDash(){$('#dLib').textContent=SEED.length+S.mine.length;$('#dSaved').textContent=S.saved.length;$('#dMine').textContent=S.mine.length;$('#dOpp').textContent=O.length;$('#dReq').textContent=S.reqs.length;$('#dSp').textContent=S.sport||'No checklist yet'}
+$('#mic').onclick=()=>{const R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R)return toast('Voice search is not supported in this browser');const r=new R();r.lang=VL[S.lang]||'en-IN';r.onresult=e=>{$('#q').value=e.results[0][0].transcript;renderRes()};r.onerror=()=>toast('Could not hear you. Try again');r.start();toast('Listening…')};
+$('#waSite').href='https://wa.me/?text='+encodeURIComponent('VidyaSetu: free notes, scholarships and sports info for rural students. '+(location.href.startsWith('http')?location.href:''));
+const FB_NUMBER=''; // put your WhatsApp number with country code, e.g. '91XXXXXXXXXX'. Leave empty to let the sender pick a contact.
+$('#fbForm').onsubmit=e=>{e.preventDefault();const m='VidyaSetu feedback\nWho: '+$('#fbWho').value+'\nMost useful: '+$('#fbPart').value+'\nConfusing/missing: '+$('#fbText').value.trim();window.open('https://wa.me/'+FB_NUMBER+'?text='+encodeURIComponent(m),'_blank','noopener,noreferrer');e.target.reset()};
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.08});document.querySelectorAll('main section').forEach(n=>{n.classList.add('rv');io.observe(n)})}
+applyLang();renderRes();renderOpps();updateDash();
+</script>
+<script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
+</body>
+</html>
